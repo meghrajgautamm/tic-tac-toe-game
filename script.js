@@ -79,6 +79,7 @@ const showWinner=(winner)=>{
      msg.innerText=`Congratulation, The winner is ${winner} !`;
     msgContainer.classList.remove("remove");
    // hide.classList.add("hide"); I think it is good to keep because sometime the player wanted to know their moves.
+    img.style.width="200px";
     music.play();
     music.currentTime=0;
 }
