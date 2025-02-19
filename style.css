@@ -172,3 +172,23 @@ body{
         margin-top: 10%;
     }
 }
+    @media only screen and (min-width: 650px)and (max-width: 1024px){
+        .startGame{
+            height: 100%;
+            width: 100%;
+            margin-top: 40%;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        .instructions{
+            font-size: 20px;
+            width: 450px;
+        }
+        .instructions ol{
+            margin-left: -30%;
+        }
+        .instructions h2{
+            margin-left: -2%;
+        }
+}
