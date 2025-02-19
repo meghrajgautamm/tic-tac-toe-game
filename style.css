@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+.startGame{
+    height: 100%;
+    width: 100%;
+    margin-top: 15%;
+    text-align: center;
+    justify-content: center;
+}
+.startGame button{
+    margin-top: 40px;
+    margin-right: 2%;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+.container{
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+.box{
+    height: 18vmin; 
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: rgba(255, 255, 255, 0.467);
+}
+.hide{
+    display: none;
+}
+#reset{
+    margin-top: 2%;
+    color: white;
+    font-size: 21px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.remove{
+    display: none;
+}
+#msg{
+    color: aqua;
+    font-size: 9vmin;
+}
+#newGame{
+    color: white;
+    font-size: 21px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    position: absolute;
+    margin-top: -7%; 
+    margin-left: 3%;
+    display: flex;
+}
+.anchor{
+    text-decoration: none;
+    color: rgb(244, 246, 242);
+    margin-right: 70%;
+    font-size: larger;    
+    cursor: help;  
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10%;
+    margin-top: 0;
+   
+}
+.anchor span{
+    color: #170000;
+}
+.howToPlay{
+   text-align: justify;
+   color: white;
+   margin-left: 10%;
+   margin-top: 1%;
+   font-size: larger;
+}
+.cords{
+    display: none;
+}
+.instructions{
+    text-align: justify;
+    color: white;
+    margin-left: 35%;
+    margin-top: 4%;
+    font-size: larger;
+    display: none;
+}
+.head{
+   margin-left: 15%;
+}
+#goHome{
+    margin-top: 2%;
+    color: white;
+    font-size: 21px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+}
+@media only screen and (max-width:650px){
+    .startGame{
+        height: 100%;
+        width: 100%;
+        margin-top: 70%;
+        text-align: center;
+        justify-content: center;
+    }
+    .hideGame{
+        margin-top: 50%;
+    }
+    .howToPlay{
+        font-size: small;
+        width: 300px;
+    }
+    .instructions{
+        font-size: small;
+        width: 250px;
+    }
+    .instructions ol{
+        margin-left: -45%;
+    }
+    .instructions h2{
+        margin-left: -5%;
+    }
+    #msg{
+        margin-top: 60%;
+        font-size: 45px;
+    }
+    .img{
+        margin-right: 10%;
+        margin-top: -10%;
+    }
+}

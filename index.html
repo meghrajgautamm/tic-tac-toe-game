@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/adb2eba5a1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+
+    <div class="msg-container remove">
+        <p id="msg">Winner</p>
+        <button id="newGame">New Game</button><br>
+        <img src="excited.gif" class="img">
+    </div>
+    <div class="startGame">
+        <h1>Welcome to Tic-Tac-Toe Game...</h1>
+        <button onclick="openGame()">Play Game</button>
+        <button onclick="instructions()">How to Play?</button>
+        <div class="instructions">
+            <h2 class="head">Instructions</h2>
+            <ol>
+                <li>Players: There are two players, one uses "X" and the other uses "O".</li>
+                <li>Turns: Players take turns marking an empty spot on the grid with their symbol ("X" or "O").</li>
+                <li>Grid: The game board is a 3x3 grid with 9 spaces in total.</li>
+                <li>Winning: The first player to align three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.</li>
+                <li>Tie: If all the spaces are filled and no player has won, the game ends in a draw.</li>
+             </ol>
+        </div>
+    </div>
+</div>
+    <main class="hideGame hide">
+        <h1>Tic Tac Toe</h1>
+        <h3 class="anchor" onmousemove="showDiv()" onmouseout="clearDiv()">How to Play &nbsp;<span><i class="fa-solid fa-circle-question"></span></i></h3>
+    <div class="howToPlay cords">
+        <ol>
+           <li>Players: There are two players, one uses "X" and the other uses "O".</li>
+           <li>Turns: Players take turns marking an empty spot on the grid with their symbol ("X" or "O").</li>
+           <li>Grid: The game board is a 3x3 grid with 9 spaces in total.</li>
+           <li>Winning: The first player to align three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.</li>
+           <li>Tie: If all the spaces are filled and no player has won, the game ends in a draw.</li>
+        </ol>
+       </div>
+        <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        </div>
+        <button id="goHome">Quit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="reset">Reset</button>
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>
